@@ -1,0 +1,79 @@
+{
+  "experiment_id": "P2_act_LeakyReLU",
+  "phase": "activation",
+  "model_name": "VGG_Half_LeakyReLU",
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer_name": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "momentum": 0.9,
+  "loss_fn": "CrossEntropy",
+  "l1_lambda": 0.0,
+  "label_smoothing": 0.0,
+  "activation": "LeakyReLU",
+  "use_scheduler": true,
+  "scheduler_type": "CosineAnnealingLR",
+  "seed": 42,
+  "save_dir": "./saved_models/",
+  "results_csv": "./experiments/results.csv",
+  "num_params": 2440394,
+  "best_val_acc": 0.3715,
+  "test_acc": 0.3728,
+  "test_loss": 1.6199231693267822,
+  "train_time_seconds": 64.66788411140442,
+  "history": {
+    "train_loss": [
+      2.184838356018066,
+      1.9858471309661865,
+      1.8616529943466187,
+      1.7182255083084106,
+      1.6195541049957276
+    ],
+    "train_acc": [
+      0.1634,
+      0.2414,
+      0.2864,
+      0.3286,
+      0.3684
+    ],
+    "val_loss": [
+      2.1005288238525393,
+      1.9142286205291748,
+      1.760915964126587,
+      1.7472364292144775,
+      1.6290992679595948
+    ],
+    "val_acc": [
+      0.212,
+      0.303,
+      0.301,
+      0.35,
+      0.3715
+    ]
+  },
+  "class_accs": [
+    0.4449999928474426,
+    0.5400000214576721,
+    0.035999998450279236,
+    0.2529999911785126,
+    0.16300000250339508,
+    0.44600000977516174,
+    0.4620000123977661,
+    0.5350000262260437,
+    0.6700000166893005,
+    0.17800000309944153
+  ],
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ]
+}

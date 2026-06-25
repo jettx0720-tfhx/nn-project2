@@ -1,0 +1,19 @@
+# Model weights (upload to Google Drive instead)
+*.pth
+
+# CIFAR-10 dataset files (too large, user downloads via torchvision)
+cifar-10-batches-py/
+cifar-10-python.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# System
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+package-lock.json

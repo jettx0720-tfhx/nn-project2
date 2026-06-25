@@ -1,0 +1,79 @@
+{
+  "experiment_id": "P3_loss_CE_LS_01",
+  "phase": "loss",
+  "model_name": "VGG_Half_ELU",
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer_name": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "momentum": 0.9,
+  "loss_fn": "CrossEntropy",
+  "l1_lambda": 0.0,
+  "label_smoothing": 0.1,
+  "activation": "ELU",
+  "use_scheduler": true,
+  "scheduler_type": "CosineAnnealingLR",
+  "seed": 42,
+  "save_dir": "./saved_models/",
+  "results_csv": "./experiments/results.csv",
+  "num_params": 2440394,
+  "best_val_acc": 0.5805,
+  "test_acc": 0.5769,
+  "test_loss": 1.4243266412734985,
+  "train_time_seconds": 74.56722712516785,
+  "history": {
+    "train_loss": [
+      2.0691480674743654,
+      1.8635261795043945,
+      1.7207887670516968,
+      1.550758773803711,
+      1.4199901100158692
+    ],
+    "train_acc": [
+      0.2498,
+      0.3416,
+      0.417,
+      0.5096,
+      0.5768
+    ],
+    "val_loss": [
+      1.9207056369781494,
+      1.829430814743042,
+      1.6334084215164184,
+      1.5240259037017823,
+      1.4183406019210816
+    ],
+    "val_acc": [
+      0.292,
+      0.37,
+      0.4675,
+      0.526,
+      0.5805
+    ]
+  },
+  "class_accs": [
+    0.6850000023841858,
+    0.7760000228881836,
+    0.45500001311302185,
+    0.37400001287460327,
+    0.46299999952316284,
+    0.43299999833106995,
+    0.7390000224113464,
+    0.6010000109672546,
+    0.6430000066757202,
+    0.6000000238418579
+  ],
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ]
+}

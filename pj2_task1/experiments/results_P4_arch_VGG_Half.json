@@ -1,0 +1,79 @@
+{
+  "experiment_id": "P4_arch_VGG_Half",
+  "phase": "architecture",
+  "model_name": "VGG_Half",
+  "epochs": 5,
+  "batch_size": 128,
+  "optimizer_name": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "momentum": 0.9,
+  "loss_fn": "CrossEntropy",
+  "l1_lambda": 0.0,
+  "label_smoothing": 0.0,
+  "activation": "ELU",
+  "use_scheduler": true,
+  "scheduler_type": "CosineAnnealingLR",
+  "seed": 42,
+  "save_dir": "./saved_models/",
+  "results_csv": "./experiments/results.csv",
+  "num_params": 2440394,
+  "best_val_acc": 0.3485,
+  "test_acc": 0.3504,
+  "test_loss": 1.6985261207580566,
+  "train_time_seconds": 63.252201080322266,
+  "history": {
+    "train_loss": [
+      2.195460876083374,
+      2.026371541595459,
+      1.9081721775054932,
+      1.7819606510162354,
+      1.7153471487045289
+    ],
+    "train_acc": [
+      0.1614,
+      0.2302,
+      0.2628,
+      0.307,
+      0.3352
+    ],
+    "val_loss": [
+      2.103293466567993,
+      1.979157772064209,
+      1.8092133808135986,
+      1.8030555868148803,
+      1.7077595148086548
+    ],
+    "val_acc": [
+      0.193,
+      0.232,
+      0.317,
+      0.333,
+      0.3485
+    ]
+  },
+  "class_accs": [
+    0.4000000059604645,
+    0.49300000071525574,
+    0.017999999225139618,
+    0.2529999911785126,
+    0.008999999612569809,
+    0.4339999854564667,
+    0.6050000190734863,
+    0.4650000035762787,
+    0.6480000019073486,
+    0.17900000512599945
+  ],
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ]
+}

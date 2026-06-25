@@ -1,0 +1,79 @@
+{
+  "experiment_id": "P2_act_SiLU",
+  "phase": "activation",
+  "model_name": "VGG_Half_SiLU",
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer_name": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "momentum": 0.9,
+  "loss_fn": "CrossEntropy",
+  "l1_lambda": 0.0,
+  "label_smoothing": 0.0,
+  "activation": "SiLU",
+  "use_scheduler": true,
+  "scheduler_type": "CosineAnnealingLR",
+  "seed": 42,
+  "save_dir": "./saved_models/",
+  "results_csv": "./experiments/results.csv",
+  "num_params": 2440394,
+  "best_val_acc": 0.4185,
+  "test_acc": 0.4199,
+  "test_loss": 1.5399909978866577,
+  "train_time_seconds": 71.3050422668457,
+  "history": {
+    "train_loss": [
+      2.1253487064361574,
+      1.9204672969818115,
+      1.7929736766815185,
+      1.6397285179138184,
+      1.5349623792648315
+    ],
+    "train_acc": [
+      0.1948,
+      0.2456,
+      0.2998,
+      0.3674,
+      0.4132
+    ],
+    "val_loss": [
+      1.9832143535614013,
+      1.8753339347839355,
+      1.785395112991333,
+      1.7340269451141357,
+      1.5489394083023071
+    ],
+    "val_acc": [
+      0.2695,
+      0.27,
+      0.3205,
+      0.354,
+      0.4185
+    ]
+  },
+  "class_accs": [
+    0.5239999890327454,
+    0.4959999918937683,
+    0.2879999876022339,
+    0.18000000715255737,
+    0.33500000834465027,
+    0.4059999883174896,
+    0.5360000133514404,
+    0.4950000047683716,
+    0.5820000171661377,
+    0.3569999933242798
+  ],
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "experiment_id": "P2_act_GELU",
+  "phase": "activation",
+  "model_name": "VGG_Half_GELU",
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer_name": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "momentum": 0.9,
+  "loss_fn": "CrossEntropy",
+  "l1_lambda": 0.0,
+  "label_smoothing": 0.0,
+  "activation": "GELU",
+  "use_scheduler": true,
+  "scheduler_type": "CosineAnnealingLR",
+  "seed": 42,
+  "save_dir": "./saved_models/",
+  "results_csv": "./experiments/results.csv",
+  "num_params": 2440394,
+  "best_val_acc": 0.445,
+  "test_acc": 0.4363,
+  "test_loss": 1.5002824268341064,
+  "train_time_seconds": 71.52224683761597,
+  "history": {
+    "train_loss": [
+      2.1188754070281983,
+      1.9252312219619752,
+      1.7740264053344728,
+      1.604418018913269,
+      1.5001293552398682
+    ],
+    "train_acc": [
+      0.1996,
+      0.245,
+      0.3164,
+      0.3826,
+      0.4282
+    ],
+    "val_loss": [
+      1.9153497467041016,
+      1.8779900665283202,
+      1.6838952465057373,
+      1.6191750288009643,
+      1.4883299226760864
+    ],
+    "val_acc": [
+      0.282,
+      0.269,
+      0.3475,
+      0.407,
+      0.445
+    ]
+  },
+  "class_accs": [
+    0.5130000114440918,
+    0.5559999942779541,
+    0.3089999854564667,
+    0.26899999380111694,
+    0.2669999897480011,
+    0.3529999852180481,
+    0.6259999871253967,
+    0.5109999775886536,
+    0.5889999866485596,
+    0.3700000047683716
+  ],
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ]
+}

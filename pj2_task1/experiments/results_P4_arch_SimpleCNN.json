@@ -1,0 +1,79 @@
+{
+  "experiment_id": "P4_arch_SimpleCNN",
+  "phase": "architecture",
+  "model_name": "SimpleCNN",
+  "epochs": 5,
+  "batch_size": 128,
+  "optimizer_name": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "momentum": 0.9,
+  "loss_fn": "CrossEntropy",
+  "l1_lambda": 0.0,
+  "label_smoothing": 0.0,
+  "activation": "ELU",
+  "use_scheduler": true,
+  "scheduler_type": "CosineAnnealingLR",
+  "seed": 42,
+  "save_dir": "./saved_models/",
+  "results_csv": "./experiments/results.csv",
+  "num_params": 620810,
+  "best_val_acc": 0.455,
+  "test_acc": 0.4618,
+  "test_loss": 1.466587678527832,
+  "train_time_seconds": 49.29950833320618,
+  "history": {
+    "train_loss": [
+      2.3194234338760378,
+      1.8508673797607422,
+      1.7101679096221925,
+      1.6238342960357666,
+      1.5665973480224609
+    ],
+    "train_acc": [
+      0.218,
+      0.3098,
+      0.3678,
+      0.3962,
+      0.4242
+    ],
+    "val_loss": [
+      1.8403415203094482,
+      1.8024436721801758,
+      1.6172268218994141,
+      1.5656521854400636,
+      1.4739461498260498
+    ],
+    "val_acc": [
+      0.334,
+      0.3515,
+      0.3905,
+      0.4225,
+      0.455
+    ]
+  },
+  "class_accs": [
+    0.44999998807907104,
+    0.6179999709129333,
+    0.4480000138282776,
+    0.15399999916553497,
+    0.27300000190734863,
+    0.46000000834465027,
+    0.5730000138282776,
+    0.5059999823570251,
+    0.7360000014305115,
+    0.4000000059604645
+  ],
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ]
+}
